@@ -1,16 +1,16 @@
 # simulation
-rm(list= ls())
+rm(list=ls())
 
 # load functions needed for simulations
-source("setup_functions.R")
+source("code/setup_functions.R")
 
 # load simulation design
-source("simulation_design")
+source("code/simulation_design.R")
 
-asdfaf
+
 # tables to store results
-table_max <- data.frame(matrix(NA, nrow = length(nvec), ncol = length(dhatvec)+1))
-names(table_max) <- c("n", paste("dhat=",dhatvec[1]), paste("dhat=",dhatvec[2]), paste("dhat=",dhatvec[3]))
+table_max <- data.frame(matrix(NA, nrow = length(nvec), ncol = dmax+1))
+names(table_max) <- c("n", 1:dmax)
 table_mean <- data.frame(matrix(NA, nrow = length(nvec), ncol = length(dhatvec)+1))
 names(table_mean) <- c("n", paste("dhat=",dhatvec[1]), paste("dhat=",dhatvec[2]), paste("dhat=",dhatvec[3]))
 
