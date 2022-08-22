@@ -11,11 +11,13 @@ source("code/simulation_design.R")
 # tables to store results
 table_max <- data.frame(matrix(NA, nrow = length(nvec), ncol = dmax+1))
 names(table_max) <- c("n", 1:dmax)
-table_mean <- data.frame(matrix(NA, nrow = length(nvec), ncol = length(dhatvec)+1))
+table_mean <- data.frame(matrix(NA, nrow = length(nvec), ncol = dmax+1))
 names(table_mean) <- c("n", 1:dmax)
 
 
 
+for (dd in 1:dmax){
+  dhat <- dd
   for (s in 1:length(nvec)){
     index = 1
     n <- nvec[s]
@@ -35,12 +37,10 @@ names(table_mean) <- c("n", 1:dmax)
     data <- generate_data_nonstat(latent_pos, gamma, TT, index)
     
     # estimate Phat
-    Xhat <- array(NA, dim = c(n,dmax,TT) )
-    for (tt in 1:TT){
-      Xhat[,,tt]<- estimateX_ASE(data$A[,,tt],dmax,index)
+    Phat <- array(NA, dim = c(n,n,TT) )
+    for (ii in 1:TT){
+      Phat[,,ii]<- estimate_ASE(data$A[,,ii],dhat,index)
     }
-    
-    # add Ipq and dim select here !!!
     
     # compute max and mean distance 
     diff_max <- max_estimate(Phat,data$P,TT)
@@ -52,7 +52,7 @@ names(table_mean) <- c("n", 1:dmax)
     table_mean[,1] <- nvec
     table_mean[s,dd+1] <- diff_mean$mean_est
   }
-
+}
 table_max
 table_mean
 
