@@ -9,6 +9,20 @@ The repo contains several folders:
 - `notes`: latex notes (includes graphs and tables)
 
 
+## `code`
+Each simulation needs 3 files. 
 
+- `setup_functions.R` contains all the functions
+- `simulation_design#.R` contains the design (see table below for the complete list)
+- `simulate_loop.R` runs the simulation, saves results, and outputs a .tex table.
+
+All the simulations are contained in the file `simulation.R`. 
+
+### simulation designs
+
+Design | $n$          | $T$   | $K$   | $d$   | $\gamma$ | $\nu$
+:-:    | :-:        | :-: | :-: | :-: | :-:      | :-: 
+1      | 2000-10000 | 5   | 2   | 1   | 0.1      | (0.8, -1.5)
+2      | 2000-10000 | 5   | 2   | 1   | 0.5      | (0.8, -1.5)
 
 TO-DO

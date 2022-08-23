@@ -1,0 +1,26 @@
+% latex table generated in R 3.6.1 by xtable 1.8-4 package
+% Mon Aug 22 20:43:39 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrr}
+  \hline
+n & 1 & 2 & 3 \\ 
+  \hline
+2000 & 1.7524 & 0.4842 & 1.6413 \\ 
+  3000 & 1.7318 & 0.4353 & 1.5880 \\ 
+   \hline
+\end{tabular}
+\end{table}
+% latex table generated in R 3.6.1 by xtable 1.8-4 package
+% Mon Aug 22 20:43:39 2022
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrr}
+  \hline
+n & 1 & 2 & 3 \\ 
+  \hline
+2000 & 1.7524 & 0.4842 & 1.6413 \\ 
+  3000 & 1.7318 & 0.4353 & 1.5880 \\ 
+   \hline
+\end{tabular}
+\end{table}
