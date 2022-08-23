@@ -373,14 +373,16 @@ conditional probabilities in the dynamic network model.</p>
 </ul>
 <div id="code" class="section level2">
 <h2><code>code</code></h2>
-<p>The simulation is run using 3 files.</p>
+<p>Each simulation needs 3 files.</p>
 <ul>
 <li><code>setup_functions.R</code> contains all the functions</li>
 <li><code>simulation_design#.R</code> contains the design (see table
 below for the complete list)</li>
-<li><code>simulation.R</code> runs the simulation, saves results, and
+<li><code>simulate_loop.R</code> runs the simulation, saves results, and
 outputs a .tex table.</li>
 </ul>
+<p>All the simulations are contained in the file
+<code>simulation.R</code>.</p>
 <div id="simulation-designs" class="section level3">
 <h3>simulation designs</h3>
 <table>
@@ -403,6 +405,24 @@ outputs a .tex table.</li>
 <td align="center">2</td>
 <td align="center">1</td>
 <td align="center">0.1</td>
+<td align="center">(0.8, -1.5)</td>
+</tr>
+<tr class="even">
+<td align="center">2</td>
+<td align="center">2000-10000</td>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">0.5</td>
+<td align="center">(0.8, -1.5)</td>
+</tr>
+<tr class="odd">
+<td align="center">3</td>
+<td align="center">2000-10000</td>
+<td align="center">5</td>
+<td align="center">2</td>
+<td align="center">1</td>
+<td align="center">1.0</td>
 <td align="center">(0.8, -1.5)</td>
 </tr>
 </tbody>
