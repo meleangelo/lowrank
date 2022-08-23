@@ -4,6 +4,7 @@ require(RSpectra)
 require(irlba)
 require(grdpg)
 require(mclust)
+require(xtable)
 
 # function to generate K latent positions vectors from a matrix d x K
 generate_latent_posSBM <- function(latent, d, block_size){
