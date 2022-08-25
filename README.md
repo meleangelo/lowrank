@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Low-rank simulations
 
 This repo contains simulations to check the low-rank approximation of conditional probabilities in the dynamic network model.
