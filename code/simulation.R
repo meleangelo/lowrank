@@ -32,3 +32,15 @@ source("code/setup_functions.R")
 source("code/simulation_design3.R")
 # run siulation
 source("code/simulate_loop.R")
+
+
+
+
+#### DESIGN 4
+rm(list=ls())
+# load functions needed for simulations
+source("code/setup_functions.R")
+# load simulation design
+source("code/simulation_design4.R")
+# run siulation
+source("code/simulate_loop.R")

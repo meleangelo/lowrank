@@ -1,4 +1,4 @@
-design <- 1
+design <- 4
 # network sizes to simulate
 nvec <- c(2000,3000,4000,5000,6000,10000) 
 # number of simulations (not used yet)
