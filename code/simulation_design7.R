@@ -14,7 +14,7 @@ dmax <- 5  # largest d to try for estimation
 
 
 # latent positions
-latent <- matrix(cbind(.8, -1.5), nrow = d, ncol = K)   
+latent <- matrix(cbind(.8, .3, -.6, -1.5), nrow = d, ncol = K)   
 
 # tables to store results
 table_max <- data.frame(matrix(NA, nrow = length(nvec), ncol = dmax+1))
